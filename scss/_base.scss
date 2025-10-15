@@ -1,0 +1,63 @@
+
+body{
+    color: $primary-400;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    line-height: 1.2;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 32px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 16px;
+}
+.paragraph-lg,.paragraph-md,.paragraph-sm,.paragraph-xs{
+    line-height: 1.5;
+    font-weight: normal;
+}
+.paragraph-lg{
+    font-size: 20px;
+}
+.paragraph-md{
+    font-size: 16px;
+}
+.paragraph-sm{
+    font-size: 14px;
+}
+.paragraph-xs{
+    font-size: 12px;
+}
+
+.label-xl, .label-lg, .label-md, .label-sm{
+    line-height: 1.5;
+    font-weight: medium;
+}
+.label-xl{
+    font-size: 32px;
+}
+.label-lg{
+    font-size: 24px;
+}
+.label-md{
+    font-size: 20px;
+}
+.label-sm{
+    font-size: 16px;
+}
+.w-100{
+    max-width: 100%;
+}

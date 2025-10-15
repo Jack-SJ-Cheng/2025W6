@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #00807E;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+.paragraph-lg, .paragraph-md, .paragraph-sm, .paragraph-xs {
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.paragraph-lg {
+  font-size: 20px;
+}
+
+.paragraph-md {
+  font-size: 16px;
+}
+
+.paragraph-sm {
+  font-size: 14px;
+}
+
+.paragraph-xs {
+  font-size: 12px;
+}
+
+.label-xl, .label-lg, .label-md, .label-sm {
+  line-height: 1.5;
+  font-weight: medium;
+}
+
+.label-xl {
+  font-size: 32px;
+}
+
+.label-lg {
+  font-size: 24px;
+}
+
+.label-md {
+  font-size: 20px;
+}
+
+.label-sm {
+  font-size: 16px;
+}
+
+.page {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.page .addPage {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin: 0 auto;
+}
+
+.addCard {
+  margin: 0 auto;
+  padding-left: 110px;
+  padding-right: 110px;
+  padding-top: 65px;
+  padding-bottom: 48px;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+.addCard .addList {
+  margin-left: 24px;
+}
+.addCard .addList h4 {
+  border-bottom: 3px solid #00807E;
+  margin-bottom: 36px;
+}
+.addCard .addList button {
+  background-color: #00807E;
+  color: #FFFFFF;
+  padding: 8px 20px;
+}
+
+.showPage {
+  max-width: 1296px;
+  padding-top: 93px;
+  padding-bottom: 93px;
+  margin: 0 auto;
+}
+.showPage .sort {
+  margin-bottom: 24px;
+}
+.showPage .result .card {
+  position: relative;
+  width: 31%;
+  margin: 12px;
+  padding: 0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+.showPage .result .card .card-title {
+  border-bottom: 2px solid #00807E;
+  margin-bottom: 20px;
+}
+.showPage .result .card .card-text {
+  color: #757575;
+  margin-bottom: 24px;
+}
+.showPage .result .card .card-body {
+  position: relative;
+}
+.showPage .result .card .card-body .scoreTag {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  padding: 4px 8px;
+  color: #FFFFFF;
+  background-color: #00807E;
+}
+.showPage .result .card .card-footer {
+  background-color: #FFFFFF;
+  border: 0;
+}
+.showPage .result .card .regionTag {
+  position: absolute;
+  padding: 7px 8px;
+  top: -12px;
+  left: 0;
+  color: #FFFFFF;
+  background-color: #64C3BF;
+}
+
+@media (max-width: 1024px) {
+  .showPage .result .card {
+    width: 45%;
+  }
+}/*# sourceMappingURL=all.css.map */

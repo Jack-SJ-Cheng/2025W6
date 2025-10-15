@@ -1,0 +1,92 @@
+@import "cssreset";
+@import "variable";
+@import "base";
+
+.page{
+    max-width: 1920px;  
+    margin: 0 auto;
+    .addPage {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        margin: 0 auto;
+    }
+}
+.addCard{
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 65px;
+    padding-bottom: 48px;
+    box-shadow: 0 10px 5px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    .addList{
+        margin-left: 24px;
+        h4{
+            border-bottom: 3px solid $primary-400;
+            margin-bottom: 36px;
+        }
+        button{
+            background-color: $primary-400;
+            color: $neutal-0;
+            padding: 8px 20px;
+        }
+    }
+}
+.showPage{
+    max-width: 1296px;
+    padding-top: 93px;
+    padding-bottom: 93px;
+    margin: 0 auto;
+    .sort{
+        margin-bottom: 24px;
+    }
+    .result{
+        .card{
+            position: relative;
+            width: 31%;
+            margin: 12px;
+            padding: 0;
+            box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+            .card-title{
+                border-bottom: 2px solid $primary-400;
+                margin-bottom: 20px;
+            }
+            .card-text{
+                color: $neutal-600;
+                margin-bottom: 24px;
+            }
+            .card-body{
+                position: relative;
+                .scoreTag{
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    padding: 4px 8px;
+                    color: $neutal-0;
+                    background-color: $primary-400;
+                }
+            }
+            .card-footer{
+                background-color: $neutal-0;
+                border: 0;
+            }
+            .regionTag{
+                position: absolute;
+                padding: 7px 8px;
+                top: -12px;
+                left: 0;
+                color: $neutal-0;
+                background-color: $primary-300;
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .showPage{
+        .result{
+            .card{
+                width:45%
+            }
+        }
+    }
+}

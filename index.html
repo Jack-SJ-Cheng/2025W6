@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="scss/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="addPage d-flex">
+            <div class="addCard row justify-content-center">
+                <div class="logoBox d-flex flex-column col-5">
+                    <img src="./img/main_img.png" alt="主視覺圖片" class="mainPicture">
+                    <img src="./img/logo.png" alt="logo圖片" class="logo">
+                </div>
+                <div class="addList col-5">
+                    <h4 class="addTicketTitle"><span class="material-symbols-outlined">
+                            add_circle
+                        </span>新增旅遊套票
+                    </h4>
+                    <form id="addForm">
+                        <div class="mb-3 row">
+                            <label for="ticketName" class="col-sm-3 col-form-label">套票名稱</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="ticketName" name="ticketName"
+                                    placeholder="請填寫套票名稱">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="pictureURL" class="col-sm-3 col-form-label">圖片網址</label>
+                            <div class="col-sm-9">
+                                <input type="url" class="form-control" id="pictureURL" name="pictureURL"
+                                    placeholder="請填寫圖片網址">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ticketRegion" class="col-sm-3 col-form-label">景點地區</label>
+                            <div class="col-sm-9">
+                                <select name="ticketRegion" id="ticketRegion" class="form-select">
+                                    <option value="" disabled selected hidden>請選擇景點地區</option>
+                                    <option value="台北">台北</option>
+                                    <option value="新北">新北</option>
+                                    <option value="基隆">基隆</option>
+                                    <option value="台中">台中</option>
+                                    <option value="高雄">高雄</option>
+                                    <option value="南投">南投</option>
+                                    <option value="雲林">雲林</option>
+                                    <option value="嘉義">嘉義</option>
+                                    <option value="台南">台南</option>
+                                    <option value="宜蘭">宜蘭</option>
+                                    <option value="台東">台東</option>
+                                    <option value="花蓮">花蓮</option>
+                                    <option value="新竹">新竹</option>
+                                    <option value="桃園">桃園</option>
+                                    <option value="彰化">彰化</option>
+                                    <option value="苗栗">苗栗</option>
+                                    <option value="屏東">屏東</option>
+                                    <option value="澎湖">澎湖</option>
+                                    <option value="金門">金門</option>
+                                    <option value="馬祖">馬祖</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ticketPrice" class="col-sm-3 col-form-label">套票金額</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="ticketPrice" class="form-control" id="ticketPrice"
+                                    placeholder="請填寫套票金額">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ticketNum" class="col-sm-3 col-form-label">套票組數</label>
+                            <div class="col-sm-9">
+                                <input type="number" name="ticketNum" class="form-control" id="ticketNum"
+                                    placeholder="請填寫套票組數">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="ticketScore" class="col-sm-3 col-form-label">套票星級</label>
+                            <div class="col-sm-9">
+                                <input type="number" min="0" max="10" name="ticketScore" class="form-control"
+                                    id="ticketScore" placeholder="請填寫套票星級">
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="description" class="col-sm-3 col-form-label">套票描述</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="description" id="description"
+                                    placeholder="請填寫套票描述(限100字)"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3 text-end">
+                            <button type="button" class="deliver btn">新增套票</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="showPage">
+            <div class="sort row align-items-center">
+                <div class="sortRegion col-2">
+                    <select name="sortRegion" id="sortRegion" class="form-select">
+                        <option value="全部" selected>全部</option>
+                        <option value="台北">台北</option>
+                        <option value="新北">新北</option>
+                        <option value="基隆">基隆</option>
+                        <option value="台中">台中</option>
+                        <option value="高雄">高雄</option>
+                        <option value="南投">南投</option>
+                        <option value="雲林">雲林</option>
+                        <option value="嘉義">嘉義</option>
+                        <option value="台南">台南</option>
+                        <option value="宜蘭">宜蘭</option>
+                        <option value="台東">台東</option>
+                        <option value="花蓮">花蓮</option>
+                        <option value="新竹">新竹</option>
+                        <option value="桃園">桃園</option>
+                        <option value="彰化">彰化</option>
+                        <option value="苗栗">苗栗</option>
+                        <option value="屏東">屏東</option>
+                        <option value="澎湖">澎湖</option>
+                        <option value="金門">金門</option>
+                        <option value="馬祖">馬祖</option>
+                    </select>
+                </div>
+                <p class="sortNum col-5">本次搜得共6筆資料</p>
+            </div>
+            <div class="result d-flex flex-wrap">
+                <div class="empty d-flex justify-content-center">
+                    <img src="./img/no_found.png" alt="查無資料" class="emptyImg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="all.js"></script>
+</body>
+
+</html>
