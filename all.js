@@ -110,7 +110,6 @@ sortRegion.addEventListener('change', e => {
 function getFromSource(){
     axios.get('https://raw.githubusercontent.com/hexschool/js-training/main/travelApi.json')
     .then(res=>{
-        console.log(res.data.data);
         tickets = res.data.data;
         // 初始化畫面
         filterAndRender();
